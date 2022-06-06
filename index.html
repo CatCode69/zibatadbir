@@ -10,61 +10,66 @@
     <title>صفحه سلامت آقای شایان رادمنش</title>
   </head>
   <body>
-    <main class="main-container">
-      <div class="demographic">
-        <div class="pa_img-container">
+    <article>
+      <main class="main-container">
+        <div class="demographic">
           <img class="pa_img" src="Images/pa__img.png" alt="" />
-        </div>
-        <div class="demographic__info">
-          <p>نام و نام خانوادگی: شایان رادمنش</p>
-          <p>تاریخ تولد: ۱۳۸۰/۰۱/۰۷</p>
-          <p>تحصیلات: دیپلم</p>
-          <p>نام پدر: حسین</p>
-          <p>سن: ۲۰</p>
-        </div>
-        <div class="btn">
-          <a href="#"> اطلاعات تکمیلی فرم پذیرش </a>
-        </div>
-      </div>
-      <div class="education">
-        <div class="education__title">آموزش و یادگیری</div>
-        <div class="btn-group">
-          <div class="btn">محتوای آموزشی اصلی</div>
-          <div class="btn">پمفلت&hairsp;های آموزشی</div>
-          <div class="btn">ویدئو&hairsp;های آموزشی</div>
-        </div>
-      </div>
-      <div class="followup">
-        <div class="followup__title">پیگیری</div>
-        <div class="btn-group width100">
-          <div class="form width100">
-            <form class="width100" action="#" method="post ">
-              <label class="label" for="gague"
-                >در کادر زیر مقدار اندازه گیری شده روزانه حجم جاری سنج را وارد
-                کنید:
-              </label>
-              <input
-                class="gague ss02"
-                type="number"
-                id="gague"
-                min="0"
-                max="1300"
-              />
-              <label class="label" for="other"
-                >در صورت مشاهده علائم و یا داشتن سؤال می&#x00A0;توانید آن&hairsp;ها را در کادر زیر وارد کنید:</label>
-              <textarea
-                class="gague ss02 textarea"
-                id="other"
-              /></textarea>
-            </form>
+          <div class="demographic__info">
+            <p>نام و نام خانوادگی: شایان رادمنش</p>
+            <p>تاریخ تولد: ۱۳۸۰/۰۱/۰۷</p>
+            <p>تحصیلات: دیپلم</p>
+            <p>نام پدر: حسین</p>
+            <p>سن: ۲۰</p>
+          </div>
+          <div class="btn">
+            <a href="#"> اطلاعات تکمیلی فرم پذیرش </a>
           </div>
         </div>
-      </div>
-    </main>
-    <footer class="footer">
-      <div class="logo-container">
-        <img class="logo" src="Images/logo.png" alt="logo of the institution">
-      </div>
-    </footer>
+        <div class="education">
+          <div class="education__title">آموزش و یادگیری</div>
+          <div class="btn-group">
+            <div class="btn">محتوای آموزشی اصلی</div>
+            <div class="btn">پمفلت&hairsp;های آموزشی</div>
+            <div class="btn">ویدئو&hairsp;های آموزشی</div>
+          </div>
+        </div>
+        <div class="followup">
+          <div class="followup__title">پیگیری</div>
+          <div class="btn-group width100 first">
+            <div class="form width100">
+              <form class="width100" action="https://formsubmit.co/zibatadbir@gmail.com" method="post">
+                <input type="hidden" name="_next" value="https://zibatadbir.ir">
+                <label class="label" for="other"
+                >در صورت مشاهده علائم و یا داشتن سؤال می&#x00A0;توانید آن&hairsp;ها را در کادر زیر وارد کنید:</label>
+                <textarea
+                name="text"
+                class="gague ss02 textarea"
+                id="other"
+                /></textarea>
+                <label class="label" for="gague"
+                  >در کادر زیر مقدار اندازه گیری شده روزانه حجم جاری سنج را وارد
+                  کنید:
+                </label>
+                <input
+                  name="gague"
+                  class="gague ss02"
+                  type="number"
+                  id="gague"
+                  min="0"
+                  max="1300"
+                />
+                <button class="btn btn-submit" type="submit">ارسال</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="empty"></div>
+      <footer class="footer">
+        <div class="logo-container">
+          <img class="logo" src="Images/logo.png" alt="logo of the institution">
+        </div>
+      </footer>
+    </article>
   </body>
 </html>
