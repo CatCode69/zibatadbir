@@ -16,14 +16,11 @@ const form = document.querySelector("#form");
 btnSubmitLogin.addEventListener("click", function (e) {
   e.preventDefault();
   if (+inputMeli.value === 123 && +inputPassword.value === 123) {
-    login.classList.add("hidden");
-    setTimeout(function () {
-      login.classList.add("ndisplay");
-      login.classList.remove("main-container");
-      linkCSS.setAttribute("href", "style.css");
-      htmlTitle.textContent = "صفحه سلامت آقای شایان رادمنش";
-      health.classList.remove("hidden", "ndisplay");
-    }, 500);
+    login.classList.add("ndisplay");
+    login.classList.remove("main-container");
+    linkCSS.setAttribute("href", "style.css");
+    htmlTitle.textContent = "صفحه سلامت آقای شایان رادمنش";
+    health.classList.remove("ndisplay");
   } else {
     if (+inputMeli.value !== 123 && +inputPassword.value !== 123) {
       inputMeli.style.borderColor = "red";
