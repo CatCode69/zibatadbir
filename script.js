@@ -19,8 +19,10 @@ btnSubmitLogin.addEventListener("click", function (e) {
     login.classList.add("ndisplay");
     login.classList.remove("main-container");
     linkCSS.setAttribute("href", "style.css");
-    htmlTitle.textContent = "صفحه سلامت آقای شایان رادمنش";
-    health.classList.remove("ndisplay");
+    setTimeout(function () {
+      htmlTitle.textContent = "صفحه سلامت آقای شایان رادمنش";
+      health.classList.remove("ndisplay");
+    }, 1000);
   } else {
     if (+inputMeli.value !== 123 && +inputPassword.value !== 123) {
       inputMeli.style.borderColor = "red";
