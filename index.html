@@ -4,26 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="Images/favicon.svg" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="/Images/favicon.svg" />
+    <link class="c-src" rel="stylesheet" href="login.css" />
+    <script
+    defer
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
     <script defer src="script.js"></script>
-    <title>صفحه سلامت آقای شایان رادمنش</title>
+    <title class="html-title">ورود به صفحه سلامت</title>
   </head>
   <body>
-    <article>
+    <main class="login unselectable main-container">
+      <div class="left">
+        <img class="left__img" src="/Images/hands.png" alt="banner" />
+      </div>
+      <div class="right">
+        <form class="form">
+          <label class="label" for="other">کد ملی</label>
+          <input
+            placeholder="123"
+            class="gague ss02 input-margin meli"
+            type="number"
+            name="melicode"
+            id="melicode"
+          />
+          <label class="label" for="password">کلمه عبور</label>
+          <input
+            placeholder="123"
+            class="gague ss02 password"
+            type="password"
+            id="password"
+          />
+          <button type="submit" class="btn-submit-login btn btn-submit raise" href="/index.html">
+            ورود
+          </button>
+        </form>
+      </div>
+    </main>
+    <article class="health unselectable ndisplay">
       <header class="header">
         <p class="header__p">صفحه سلامت آقای شایان رادمنش</p>
-        <img class="header__logo" src="Images/Logo (2).png" alt="Logo">
+        <img class="header__logo" src="Images/Logo (2).png" draggable="false" alt="Logo">
       </header>
       <main class="main-container">
         <div class="demographic">
-          <img class="pa_img" src="Images/pa__img.png" alt="" />
+          <img class="pa_img" src="Images/pa__img.png" alt="" draggable="false" />
           <div class="demographic__info">
             <p>نام و نام خانوادگی: شایان رادمنش</p>
-            <p>تاریخ تولد: ۱۳۸۰/۰۱/۰۷</p>
+            <p>تاریخ تولد: ۱۳۷۸/۰۱/۰۷</p>
             <p>تحصیلات: دیپلم</p>
             <p>نام پدر: حسین</p>
-            <p>سن: ۲۰</p>
+            <p>سن: ۲۳</p>
           </div>
           <div class="btn raise">
             <a href="/Form/form.html" target="_blank"> اطلاعات تکمیلی فرم پذیرش </a>
@@ -32,38 +64,38 @@
         <div class="education">
           <div class="education__title">آموزش و یادگیری</div>
           <div class="btn-group">
-            <div class="btn raise"><a href="">محتوای آموزشی اصلی</a></div>
-            <div class="btn raise"><a href="">پمفلت&hairsp;های آموزشی</a></div>
-            <div class="btn raise"><a href="">ویدئو&hairsp;های آموزشی</a></div>
+            <div class="btn raise"><a href="/Presentation/presentation.html" target="_blank">محتوای آموزشی اصلی</a></div>
+            <div class="btn raise"><a href="/Pamphlets/Pamphlets.html" target="_blank">پمفلت&hairsp;های آموزشی</a></div>
+            <div class="btn raise"><a href="/Videos/videos.html" target="_blank">ویدئو&hairsp;های آموزشی</a></div>
           </div>
         </div>
         <div class="followup">
           <div class="followup__title">پیگیری</div>
           <div class="btn-group width100 first">
             <div class="form width100">
-              <form class="width100" action="https://formsubmit.co/c9363af2d79fade64f53b5571499c64e" method="post">
+              <form id="form" class="width100" action="https://formsubmit.co/c9363af2d79fade64f53b5571499c64e" method="post">
                 <input type="hidden" name="_next" value="https://zibatadbir.ir">
                 <input type="hidden" name="_captcha" value="false">
-                <label class="label" for="other"
+                <label class="label" for="text"
                 >در صورت مشاهده علائم و یا داشتن سؤال می&#x00A0;توانید آن&hairsp;ها را در کادر زیر وارد کنید:</label>
                 <textarea
                 name="text"
-                class="gague ss02 textarea"
-                id="other"
+                class="i1 gague ss02 textarea"
+                id="text"
                 /></textarea>
                 <label class="label" for="gague"
-                  >در کادر زیر مقدار اندازه گیری شده روزانه حجم جاری سنج را وارد
+                  >در کادر زیر مقدار اندازه گیری شده حجم جاری سنج را وارد
                   کنید:
                 </label>
                 <input
                   name="gague"
-                  class="gague ss02"
+                  class="i2 gague ss02"
                   type="number"
                   id="gague"
                   min="0"
                   max="1300"
                 />
-                <button class="btn btn-submit raise" type="submit">ارسال</button>
+                <button onclick="this.blur(); const html = `<div class='submitDiv'><p class='submitSuccess'>ارسال با موفقیت انجام شد</p></div>`; form.insertAdjacentHTML(`beforeend`, html);" class="btn-submit-form btn btn-submit raise" type="submit">ارسال</button>
               </form>
             </div>
           </div>

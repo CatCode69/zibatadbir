@@ -1,11 +1,11 @@
 @font-face {
   font-family: iransans;
-  src: url(Fonts/IRANSansX-Regular.woff2);
+  src: url(/Fonts/IRANSansX-Regular.woff2);
   font-weight: normal;
 }
 @font-face {
   font-family: iransans;
-  src: url(Fonts/IRANSansX-Bold.woff2);
+  src: url(/Fonts/IRANSansX-Bold.woff2);
   font-weight: bold;
 }
 
@@ -40,6 +40,15 @@ article {
   display: grid;
   grid-template-rows: auto auto 1fr auto;
   grid-template-columns: 100%;
+}
+
+.hidden {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.ndisplay {
+  display: none;
 }
 
 .header {
@@ -317,4 +326,23 @@ input[type="number"]::-webkit-inner-spin-button {
 
 div > a {
   color: inherit;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.submitDiv {
+  background-color: green;
+  border-radius: 9px;
+  margin: 1.5rem;
+}
+
+.submitSuccess {
+  color: #fff;
 }
